@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TIMEWASTE</string>
+    <string name="busname">MPK</string>
+    <string name="cal_name">Kalendarz</string>
+    <string name="events_name">Eventy</string>
+
+    <string-array name="wydarzenia">
+        <item>Koncert</item>
+        <item>Impreza</item>
+        <item>Teatr</item>
+        <item>Kino</item>
+    </string-array>
+</resources>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteActivity">
+
+
+    <EditText
+        android:id="@+id/input_note"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="250" />
+
+    <TextView
+        android:id="@+id/maxcharinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zapisz_note"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="79dp"
+        android:text="Maksymalnie 250 znaków"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/godzina_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxcharinfo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-79dp"
+        android:maxLength="5"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/godzinainfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zapisz_note"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="Wprowadź godzinę (format HH:mm)"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+
+    <Button
+
+        android:id="@+id/zapisz_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ZAPISZ"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"/>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_items"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/searchBarPlaceholderColor"
+        app:itemTextColor="@color/searchBarPlaceholderColor"/>
+
+
+
+</RelativeLayout>
